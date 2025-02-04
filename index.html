@@ -7,18 +7,69 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>sign up form</h1>
-    <p>
-      Photo by
-      <a
-        href="https://unsplash.com/@lexilaginess?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-        >Lexi Laginess</a
-      >
-      on
-      <a
-        href="https://unsplash.com/photos/a-set-of-stairs-leading-up-to-a-building-6poDd1l6UlM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-        >Unsplash</a
-      >
-    </p>
+    <main>
+      <div class="side-hero">
+        <h1>sign up form</h1>
+        <p class="credit-creator">
+          Photo by
+          <a
+            href="https://unsplash.com/@lexilaginess?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Lexi Laginess</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/a-set-of-stairs-leading-up-to-a-building-6poDd1l6UlM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+      <div class="form-section">
+        <div class="header">
+          <h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec
+            commodo augue, et hendrerit sapien. Phasellus et erat non ipsum
+            pharetra venenatis ac sed purus. Mauris tempus finibus sem, nec
+            auctor nunc.
+          </h2>
+        </div>
+        <div class="input-section">
+          <h3>Sign up now!</h3>
+          <form action="" method="post">
+            <div class="form-row">
+              <label for="first-name">First Name:</label>
+              <input type="text" name="first-name" id="first-name" />
+            </div>
+            <div class="form-row">
+              <label for="last-name">Last Name:</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@email.com"
+              />
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" name="phone" id="phone" />
+            </div>
+            <div class="form-row">
+              <label for="passwd">Password:</label>
+              <input type="password" name="passwd" id="passwd" />
+            </div>
+            <div class="form-row">
+              <label for="conf-passwd">Confirm Password:</label>
+              <input type="password" name="conf-passwd" id="conf-passwd" />
+            </div>
+          </form>
+        </div>
+        <div class="submit-section">
+          <button>Create Account</button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

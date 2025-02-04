@@ -1,10 +1,3 @@
-* {
-    box-sizing: border-box;
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
-}
-
 @font-face {
     font-family: 'im_fell_great_primer_scRg';
     src: url('/fonts/webfontkit-20250203-123910/imfellgreatprimersc-regular-webfont.woff2') format('woff2'),
@@ -14,9 +7,75 @@
 
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.side-hero {
+    flex: 0 1 auto;
+
+    position: relative;
+
+    background-image: url(/images/background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-section {
+    background-color: rgb(245, 251, 255);
+    flex: 1 1 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+.input-section {
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+.submit-section {
+    margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+}
+
+
+
 
 
 h1 {
     color: blue;
     font-family: 'im_fell_great_primer_scRg', Georgia, 'Times New Roman', Times, serif;
+}
+
+.credit-creator {
+    position: absolute;
+    bottom: 10px;
+}
+
+.credit-creator p {
+    text-align: center;
+    margin: auto;
 }
