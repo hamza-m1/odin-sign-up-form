@@ -16,12 +16,12 @@
         <p class="credit-creator">
           Photo by
           <a
-            href="https://unsplash.com/@lexilaginess?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            >Lexi Laginess</a
+            href="https://unsplash.com/@stevenerixon?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Steven Erixon</a
           >
           on
           <a
-            href="https://unsplash.com/photos/a-set-of-stairs-leading-up-to-a-building-6poDd1l6UlM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            href="https://unsplash.com/photos/man-running-on-staircase-FxlYmu_To7o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
             >Unsplash</a
           >
         </p>
@@ -31,7 +31,7 @@
         <div class="header-section">
           <h2 class="header">
             Create an account bellow if you would like a free personalised
-            athlete plan catered to your sport
+            workout plan
           </h2>
         </div>
 
@@ -40,7 +40,7 @@
           <form action="" method="post">
             <div class="form-row">
               <label for="first-name">First Name:</label>
-              <input type="text" name="first-name" id="first-name" />
+              <input type="text" name="first-name" id="first-name" required />
             </div>
             <div class="form-row">
               <label for="last-name">Last Name:</label>
@@ -53,6 +53,7 @@
                 name="email"
                 id="email"
                 placeholder="example@email.com"
+                required
               />
             </div>
             <div class="form-row">
@@ -61,11 +62,23 @@
             </div>
             <div class="form-row">
               <label for="passwd">Password:</label>
-              <input type="password" name="passwd" id="passwd" />
+              <input
+                type="password"
+                name="passwd"
+                id="passwd"
+                pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?!.* ).{8,32}"
+                required
+              />
             </div>
             <div class="form-row">
               <label for="conf-passwd">Confirm Password:</label>
-              <input type="password" name="conf-passwd" id="conf-passwd" />
+              <input
+                type="password"
+                name="conf-passwd"
+                id="conf-passwd"
+                pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?!.* ).{8,32}"
+                required
+              />
             </div>
           </form>
         </div>

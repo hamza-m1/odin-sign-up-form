@@ -27,9 +27,9 @@ main {
 
 .side-hero {
     flex: 0 1 500px;
-    background-image: url(/images/background-image.jpg);
+    background-image: url(/images/steven-erixon-FxlYmu_To7o-unsplash.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
 
     display: flex;
@@ -146,6 +146,10 @@ form {
     text-align: left;
     margin-bottom: 10px;
     margin-top: 20px;
+}
+
+.input-section input:invalid {
+    border: 1px solid red;
 }
 
 
