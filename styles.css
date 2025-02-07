@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'im_fell_great_primer_scRg';
-    src: url('/fonts/webfontkit-20250203-123910/imfellgreatprimersc-regular-webfont.woff2') format('woff2'),
-        url('/fonts/webfontkit-20250203-123910/imfellgreatprimersc-regular-webfont.woff') format('woff');
+    src: url('/font/imfellgreatprimersc-regular-webfont.woff2') format('woff2'),
+        url('/font/imfellgreatprimersc-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +21,7 @@ main {
 }
 
 .side-hero {
-    background-image: url(/images/side-hero-background-med.jpg);
+    background-image: url(images/side-hero-background-med.jpg);
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
