@@ -4,7 +4,6 @@
         url('/fonts/webfontkit-20250203-123910/imfellgreatprimersc-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 * {
@@ -14,24 +13,21 @@
     margin: 0px;
 }
 
-a {
-    text-decoration: none;
-}
-
-
-
 main {
     display: flex;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
 }
 
 .side-hero {
-    flex: 0 1 500px;
-    background-image: url(/images/steven-erixon-FxlYmu_To7o-unsplash.jpg);
+    background-image: url(/images/fitness-background.jpg);
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
+    background-size: 1000px;
 
+    flex: 0 1 600px;
     display: flex;
     flex-direction: column;
     min-width: 300px;
@@ -39,7 +35,7 @@ main {
 
 .side-hero .logo-banner {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 204px;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
 
@@ -66,16 +62,14 @@ main {
     text-align: center;
 }
 
-.credit-creator p {
-
+.credit-creator a {
+    color: rgb(255, 255, 0);
 }
 
 
 
-
-
 .form-section {
-    background-color: rgb(245, 251, 255);
+    background-color: whitesmoke;
     flex: 1 0;
 
     display: flex;
@@ -83,18 +77,8 @@ main {
 }
 
 .header-section {
-    
-    /* height: 400px; */
     padding: 150px 50px 100px;
-    
-    /* width: 500px; */
     max-width: 550px;
-
-    /* flex: auto; */
-}
-
-.header-section .header {
-
 }
 
 
@@ -102,11 +86,10 @@ main {
 .input-section {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: white;
     
     display: flex;
     flex-flow: column wrap;
-
-    background-color: beige;
 }
 
 .input-section > h3 {
@@ -116,14 +99,12 @@ main {
 }
 
 form {
-    /* width: 550px; */
     display: flex;
     flex-wrap: wrap;
     column-gap: 50px;
 
     margin-left: 50px;
     margin-bottom: 25px;
-
     min-width: 300px;
     max-width: 550px;
 }
@@ -139,6 +120,8 @@ form {
     width: 225px;
     padding: 5px;
     border-radius: 5px;
+    border: 1px solid #E5E7EB;
+    cursor: pointer;
 }
 
 .form-row label {
@@ -148,17 +131,36 @@ form {
     margin-top: 20px;
 }
 
-.input-section input:invalid {
+input + span {
+    position: relative;
+}
+
+input:user-invalid {
     border: 1px solid red;
+}
+
+input:required + span::before {
+    position: absolute;
+    content: 'Required';
+    right: 0px;
+    bottom: 36px;
+    font-size: 13px;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    background-color: #f2f2f2;
 }
 
 
 
-
-
 .submit-section {
-    margin-left: 50px;
-    margin-top: 30px;
+    padding-left: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
 }
 
@@ -167,6 +169,15 @@ form {
     border-radius: 5px;
     background-color: rgb(91, 164, 80);
     color: white;
+    cursor: pointer;
+}
+
+.submit-section button:hover {
+    background-color: rgb(100, 182, 87);
+}
+
+.submit-section button:active {
+    background-color: rgb(77, 138, 67);
 }
 
 .submit-section p {
@@ -174,12 +185,11 @@ form {
 }
 
 
-
-
-
-
-
 h1 {
     font-family: 'im_fell_great_primer_scRg', Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
 }
 
